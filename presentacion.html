@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encurtido</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        body{
+            background: linear-gradient(135deg, #040be6, #1d0090, #6f7ded);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .card-formulario{
+            width: 100%;
+            max-width: 600px;
+            border: none;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        }
+
+        .encabezado{
+            background: linear-gradient(135deg, #0642bb, #0e0590);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .encabezado h1{
+            font-weight: bold;
+        }
+
+        .card-body{
+            background-color: white;
+            padding: 35px;
+        }
+
+        .form-control{
+            border-radius: 12px;
+            padding: 12px;
+        }
+
+        .btn-personalizado{
+            background: linear-gradient(135deg, #0621a7, #0647e0);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            padding: 12px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .btn-personalizado:hover{
+            transform: scale(1.03);
+            background: linear-gradient(135deg, #3f3252, #7b2cbf);
+        }
+
+        .icono{
+            font-size: 60px;
+            margin-bottom: 10px;
+        }
+
+        .subtitulo{
+            color: #7d96ac;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card card-formulario">
+
+        <div class="encabezado">
+            <i class="bi bi-basket-fill icono"></i>
+            <h1>Encurtido</h1>
+            <p class="mb-0">Formulario de Registro</p>
+        </div>
+
+        <div class="card-body">
+
+            <h3 class="text-center mb-3">
+                Bienvenido
+            </h3>
+
+            <p class="subtitulo">
+                Favor de completar lo que se le solicita
+            </p>
+
+            <form action="menu.html" method="GET">
+
+                <div class="mb-3">
+                    <label class="form-label">
+                        <i class="bi bi-person-fill"></i> Nombre
+                    </label>
+                    <input type="text" name="nombre" class="form-control"
+                        placeholder="Ingrese su nombre" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">
+                        <i class="bi bi-calendar-fill"></i> Edad
+                    </label>
+                    <input type="number" name="edad" class="form-control"
+                        placeholder="Ingrese su edad" required>
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-label">
+                        <i class="bi bi-card-text"></i> Numeración de Carnet
+                    </label>
+                    <input type="text" name="carnet" class="form-control"
+                        placeholder="Ingrese la Numeración" required>
+                </div>
+
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-personalizado">
+                        <i class="bi bi-check-circle-fill"></i>
+                        Ingresar
+                    </button>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
